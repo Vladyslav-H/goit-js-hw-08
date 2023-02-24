@@ -8,7 +8,8 @@ import { galleryItems } from './gallery-items';
 console.log(galleryItems);
 
 const galleryEl = document.querySelector(".gallery");
-const galleryCards = createGalleryMarkup(galleryItems); const lightboxSettings = {
+const galleryCards = createGalleryMarkup(galleryItems);
+const lightboxSettings = {
   captions: true,
   captionsData: "alt",
   captionDelay: 250,
