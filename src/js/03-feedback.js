@@ -16,11 +16,13 @@ function onFormInput() {
   };
   localStorage.setItem('feedback-form-state', JSON.stringify(inputEvent));
 }
-
+console.log(parseInputEvent);
 function onFormSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
   console.log(parseInputEvent);
+  localStorage.removeItem('feedback-form-state');
+  
 }
 
 function populateForm() {
