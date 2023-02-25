@@ -9,7 +9,7 @@ formEl.addEventListener('submit', onFormSubmit);
 
 populateForm();
 
-function onFormInput(event) {
+function onFormInput() {
   const inputEvent = {
     email: formEl.email.value,
     message: formEl.message.value,
@@ -20,6 +20,7 @@ function onFormInput(event) {
 function onFormSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
+  console.log(parseInputEvent);
 }
 
 function populateForm() {
